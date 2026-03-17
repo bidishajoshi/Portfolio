@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BIDISHA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: linear-gradient(to right,#93b689, #dea6d8, #9da59f);
+            background-repeat: no-repeat;
+            background-att
+            achment: fixed;
+            background-size: cover;
+            color: #fff; 
+        }
+
+        #pp:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+
+        #pp{
+            border: 4px solid #0ec4dc;
+        }
+
+        .navbar-brand:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+
+        .navbar-brand-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+
+        .navbar-custom .navbar-nav .nav-link:hover {
+            background-color: rgba(34, 22, 22, 0.1);
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-form {
+            margin-left: 10px; 
+            color: black;
+        }
+
+        .search-form input[type="search"] {
+            width: 150px;
+            border-radius: 5px;
+            color: #000;
+        }
+
+        .search-form .btn {
+            margin-left: 5px;
+            padding: 5px 10px;
+        }
+
+        .hyy{
+            padding: 20px;
+            background-image: linear-gradient(to right,rgba(1, 59, 11, 0.952),rgb(146, 49, 64),rgb(5, 0, 0));
+        }
+
+        .footer {
+            margin-top: auto;
+            text-align: center;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+        }
+
+        .aaa_top{
+            color: #000;
+        }
+        .aaa_bottom{
+            color: #000;
+        }
+        .skills {          
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .skill-icon {          
+            width: 90px;
+            height: 90px;
+            background-color: #fff; 
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .skill-icon img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+        
+        .skill-text {
+            font-weight: bold;
+            color: #000;
+        }
+        #contact{
+            color: #000;
+        }
+        
+        #navbarNav{
+            color: #000;
+        }
+
+        .navbar-custom {
+            background-image: linear-gradient(to right, #1A237E, #D32F2F);
+        }
+
+        .projects {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            overflow: hidden;
+            overflow-y: auto;
+        }
+
+        .img-con {
+            box-shadow: 5px 5px 15px #222;
+            max-width: 350px;
+            width: 50%;
+            margin: 20px;
+            border-radius: 12%;
+            transition: all 300ms ease-in-out;
+            background-color: #fff;
+            box-shadow: 5px 5px 15px #222;
+            height: 350px;
+            width: 250px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 12%;
+            transition: all 300ms ease-in-out;
+            background-color: #fff;
+        }
+
+        .img-con:hover{
+            transform: scale(1.1);
+            transition: all 300ms ease-in-out;
+        }
+        .img-div {
+            height: 200px;
+            width: 88%;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12%;
+            margin: 20px auto;
+        }
+
+        .img-div1{
+            background-image: url(https://news.blr.com/app/uploads/sites/3/2019/10/Team-project.jpg);
+        }
+        .detail{
+            text-align: center;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .view-details{
+            border: none;
+            width: 100px;
+            height: 40px;
+            border-radius: 12%;
+            background-image: linear-gradient(to right, orange,rgb(238, 185, 70), orange);
+            transition: all 300ms ease-in-out;
+        }
+        .view-details:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .gooo:hover{
+            transform: scale(1.3);
+            cursor: pointer;
+            transition: all 300ms ease-in-out;
+        } 
+        .img-div2{
+            background-image: url(https://www.publichealthnotes.com/wp-content/uploads/2020/03/project-planning-header@2x.png);
+        }
+        .img-div3{
+            background-image: url(https://online.coolestprojects.org/packs/media/images/coolest_projects-7b439f3147b28e25ed03f23f780909f8.png);
+        }
+        .detail{
+            color: #000;
+        }
+
+        .contact-box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-item {
+            width: 350px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .contact-item:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .contact-info {
+            font-size: 16.5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+    @media screen and (max-width: 767px) {
+            .navbar-nav {
+            flex-direction: column;
+            text-align: center;
+            background-color: #f1aa0f;
+            }
+
+        .navbar-nav .nav-item {
+            margin: 10px 0;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-custom">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a class="navbar-brand" href="index.html" style="color: #0af5f5;">
+                <img src="https://th.bing.com/th/id/OIP.v7jK06MSlCzpUPEe3AnlAAAAAA?w=166&h=150&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Profile Picture" class="navbar-brand-img mr-2">
+                <strong>BIDISHA</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" style="color: #000000;"><strong>About</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills" style="color: #000000;"><strong>Skills</strong></a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects" style="color: #000000;"><strong>Projects</strong></a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="color: #000000;"><strong>Contact Me</strong></a>
+                    </li>
+                </ul>
+                <form class="form-inline search-form" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="color: #000000;">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mathiko Section -->
+    <section id="hero" class="bg-gradient py-5">
+        <div class="container">
+            <div class="row">
+                <div class="hyy col-md-12 text-center">
+                    <h1><strong><u>Welcome to My Portfolio</u></strong></h1>
+                    <p>
+                        <h5>I am Bidisha, a passionate CSIT student with a love for technology and innovation.</h5>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" name="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://th.bing.com/th/id/OIP.v7jK06MSlCzpUPEe3AnlAAAAAA?w=166&h=150&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Profile Picture" id="pp" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-6">
+                    <h1 align="center"><strong><u>About Me</u></strong></h1>
+                    <p align="justify" style="font-size: 20px; font-family: poppins;">
+                        My name is Bidisha Joshi, and I am a 20 years old female with a strong passion for technology. I was born on June 06, 2005, in the beautiful city Kathmandu. Currently, I reside in Suryabinayak,Bhaktapur.
+                    </p>
+                    <p align="justify" style="font-size: 20px; font-family: poppins;">
+                        I am pursuing my academic journey in the field of Bsc.Csit at the renowned Swastik College which is situated in the beautiful locale of Chardobato,Bhaktapur. As a first-year of CSIT student, I am thrilled to jump into the world of technology and explore its vast possibilities.
+                    </p>
+                    <p align="justify" style="font-size: 20px; font-family: poppins;">
+                        I am driven by a curiosity to explore the endless possibilities that technology offers and strive to stay up-to-date with the latest advancements in the ever-evolving world of IT. My aspiration is to make meaningful contributions to this dynamic field and make a positive impact on the lives of people through technology.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" name="skills" class="bg-light py-5">
+        <div class="container">
+            <h1 class="aaa_top text-center"><strong><u>Skills</u></strong></h1>
+            <h2>
+                <p class="aaa_bottom text-center">
+                    I have acquired a diverse skill set, including HTML, CSS, Bootstrap, Python, C/C++, Graphics Designing, and Office Suite applications.
+                </p>
+            </h2>
+            <div class="row justify-content-center skills">
+                <div class="gooo col-md-3 text-center">
+                    <div class="skill-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
+                    </div>
+                    <h4 class="skill-text">HTML</h4>
+                </div>
+                <div class="gooo col-md-3 text-center">
+                    <div class="skill-icon">
+                        <img src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo.jpg" alt="CSS">
+                    </div>
+                    <h4 class="skill-text">CSS</h4>
+                </div>
+                <div class="gooo col-md-3 text-center">
+                    <div class="skill-icon">
+                        <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/bootstrap_plain_wordmark_logo_icon_146620.png" alt="Bootstrap">
+                    </div>
+                    <h4 class="skill-text">Bootstrap</h4>
+                </div>
+                <div class="gooo col-md-3 text-center">
+                    <div class="skill-icon">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png" alt="Python">
+                    </div>
+                    <h4 class="skill-text">Python</h4>
+                </div>
+                <div class="gooo col-md-3 text-center">
+                    <div class="skill-icon">
+                        <img src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/blog/2020/06/C_C_featuredimage.png?itok=o1mJTa7J" alt="C/C++">
+                    </div>
+                    <h4 class="skill-text">C/C++</h4>
+                </div>
+                <div class="gooo col-md-3 text-center">
+                    <div class="skill-icon">
+                        <img src="https://e7.pngegg.com/pngimages/107/459/png-clipart-graphic-designing-text-logo-graphic-designer-graphic-combination-company-text.png" alt="Graphics Designing">
+                    </div>
+                    <h4 class="skill-text">Graphics Designing</h4>
+                </div>
+                <div class="gooo col-md-3 text-center">
+                    <div class="skill-icon">
+                        <img src="https://w1.pngwing.com/pngs/338/946/png-transparent-office-365-text-microsoft-office-microsoft-office-2019-microsoft-office-2013-microsoft-office-2016-microsoft-word-microsoft-office-2010-office-suite.png" alt="Office Suite">
+                    </div>
+                    <h4 class="skill-text">Office Suite</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h1 align="center"><u><strong>My Projects:</strong></u></h1>
+            <div class="projects">
+                <div class="img-con">
+                    <div class="img-div img-div1"></div>
+                    <p class="detail"><b>Project 1</b></p>
+                    <div class="btn">
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+                <div class="img-con">
+                    <div class="img-div img-div2"></div>
+                    <p class="detail"><b>Project 2</b></p>
+                    <div class="btn">
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+                <div class="img-con">
+                    <div class="img-div img-div3"></div>
+                    <p class="detail"><b>Project 3</b></p>
+                    <div class="btn">
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" name="contact" class="bg-light py-5">
+        <div class="container">
+            <h1 align="center"><u><strong>Contact Me</strong></u></h1>
+            <h5 align="center">
+                <p>If you have any questions or would like to get in touch, feel free to reach out to me using the contact information below:</p>
+            </h5>
+            <div class="contact-box">
+                <a href="mailto:bidishajoshi9@gmail.com" target="_blank" class="contact-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/gmail.png" class="contact-icon" alt="Email Icon">
+                    <div class="contact-info">
+                        <h5>Email:</h5>
+                        <p>bidishajoshi9@gmail.com</p>
+                    </div>
+                </a>
+                <a href="tel:+97700101101" class="contact-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" class="contact-icon" alt="Phone Icon">
+                    <div class="contact-info">
+                        <h5>Phone:</h5>
+                        <p>+977 9860829657</p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/bidisha.joshi.7?mibextid=kFxxJD" target="_blank" class="contact-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" class="contact-icon" alt="Facebook Icon">
+                    <div class="contact-info">
+                        <h5>Facebook:</h5>
+                        <p>facebook.com/BIDISHA/</p>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/bidisha-joshi-2b31732b3/" target="_blank" class="contact-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" class="contact-icon" alt="LinkedIn Icon">
+                    <div class="contact-info">
+                        <h5>LinkedIn:</h5>
+                        <p>linkedin.com/in/BIDISHA/</p>
+                    </div>
+                </a>
+                <a href="https://github.com/bidishajoshi/bidisha.git" target="_blank" class="contact-item">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/github.png" class="contact-icon" alt="GitHub Icon">
+                    <div class="contact-info">
+                        <h5>GitHub:</h5>
+                        <p>github.com/BIDISHA</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section-->
+    <footer class="footer">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center" style="height: 100%;">
+                <p>© 2023 Bidisha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
